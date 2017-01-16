@@ -68,7 +68,7 @@ $(function() {
           */
         it('side menu element became visible from invisible and vice-versa on clicking the menu icon', function() {
             /* triggering click event */
-            var menuIcon = document.getElementById("menu-icon-link");
+            var menuIcon = $('.menu-icon-link');
             menuIcon.click();
             expect($("body").hasClass("menu-hidden")).toBe(false);
             /* make menu visible on click event */
